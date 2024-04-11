@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void displayRun(int values[], int size) {
+void hasRun(int values[], int size) {
     bool inRun = false;
     for (int i = 0; i < size; ++i) {
         if (i == 0 || values[i] != values[i - 1]) {
@@ -44,5 +44,5 @@ int main() {
     }
 
     cout << "\nHas run: ";
-    displayRun(dieValues, DIE_TOSSES);
+    hasRun(dieValues, DIE_TOSSES);
 }
